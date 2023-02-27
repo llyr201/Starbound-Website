@@ -105,3 +105,35 @@
     color: #fff;
     font-size: 36px;
 }
+
+.Article_Button{
+    background-color: green;
+    width: 400px;
+    height:400px ;
+    border-radius: 10px;
+
+}
+
+.News_Title{
+    color: #fff;
+    font-size: 30px;
+    align-items:start;
+}
+
+.NewsLink{
+    text-decoration: none ;
+}
+
+.Sub_Title{
+    font-size: 40px;
+    color: #fff;
+}
+
+.NewsPanel{
+    padding: 10px;
+}
+
+.subNewsText{
+    color: #fff;
+    font-size: 16px;
+}
