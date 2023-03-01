@@ -101,3 +101,11 @@
 .MainPanel{
     min-width: 1080px;
 }
+.Options{
+    background-color: black;
+}
+.Games{
+    color: #fff;
+    font-size: 50px;
+
+}
