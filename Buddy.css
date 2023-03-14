@@ -131,9 +131,19 @@
 
 .NewsPanel{
     padding: 10px;
+    background: #131313;
 }
 
 .subNewsText{
     color: #fff;
     font-size: 16px;
+}
+.Blue_News{
+    height: 200px;
+    width: 500px;
+    color: #fff;
+    font-size: 25px;
+    background: url(/Ban\ Twitter\ Buddy.png);
+    border-radius: 5%;
+    
 }
