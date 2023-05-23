@@ -78,97 +78,25 @@
     background-color: #1f1f1f;
 }
 
-.Welcome_Meassage{
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    font-size: 50px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: #fff;
-}
 
-.Article_Button{
-    background-color: green;
-    width: 400px;
-    height:400px ;
-    border-radius: 10px;
-
-}
-
-.News_Title{
+.Writing p{
     color: #fff;
     font-size: 30px;
-    align-items:start;
+    padding-left: 5%;
+    padding-top: 10%;
+}
+.Writing{
+    display: flex ;
+    justify-content: space-between;
+}
+.body{
+    background: #1f1f1f;
 }
 
-.NewsLink{
-    text-decoration: none ;
-}
-
-.Sub_Title{
-    font-size: 40px;
-    color: #fff;
-}
-
-.NewsPanel{
-    padding: 10px;
-}
-
-.subNewsText{
-    color: #fff;
-    font-size: 16px;
-}
-
-.Blue{
-    height: 200px;
-    width: 175px;
-    text-align: right;
-    text-align-last: bottom;
-    color: #fff;
-    font-size: 25px;
-    background: url(/Image/WebsiteGame\ Launcher\ Buddy.png);
-    border-radius: 5%;
-    
-}
-
-.Blue-text {
-    position: absolute;
-    bottom: 5%;
-    width: 100%;
-    left: 0%;
-  }
-  
-
-.Coming_soon{
-    color: #fff;
-}
-
-.side{
-    align-items:none;
-    align-content: none;
-    justify-content: none ;
-}
-
-.Blue_News{
-    height: 400px;
-    width: 700px;
-    color: #fff;
-    background: url(/Website\ art.png);
-    text-align: bottom;
-    border-radius: 5%; 
-}
-
-.Blue_News-text{
-    justify-content: none;
-    align-items: none;
-    align-content: none;
-}
-
-.Patch_News{
-    height: 200px;
-    width: 300px;
-    color: #fff;
-    background: url(/R.png);
-    text-align: bottom;
-    border-radius: 5%; 
+.btn{
+    background-color: red;
+    border-radius: 20px;
+    width: 150px;
+    height: 50px;
+    border-color: transparent;
 }
