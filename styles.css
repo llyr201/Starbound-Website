@@ -5,6 +5,37 @@ body{
     padding: 0;
 }
 
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    z-index: 0;
+    /* Random white dots (stars) using radial gradients */
+    background-image:
+        radial-gradient(white 1px, transparent 1px),
+        radial-gradient(white 1.5px, transparent 1.5px),
+        radial-gradient(white 0.5px, transparent 0.5px),
+        radial-gradient(white 1px, transparent 1px),
+        radial-gradient(white 1.2px, transparent 1.2px);
+    background-size:
+        100px 100px,
+        150px 150px,
+        200px 200px,
+        250px 250px,
+        300px 300px;
+    background-position:
+        10px 20px,
+        80px 120px,
+        150px 60px,
+        200px 180px,
+        250px 90px;
+    opacity: 0.8;
+}
+
 h1{
     font-family: 'arial', sans-serif;
     color: white;
