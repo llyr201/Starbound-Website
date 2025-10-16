@@ -122,12 +122,14 @@ img{
 }
 
 .spacer-content{
-
+    text-align: center;
 }
 .spacer{
-    margin-left: 5px; 
-    margin-top: 0; 
+     display: grid;
+    /* This creates two main columns: one for text, one for the controller */
+    grid-template-columns: 1.5fr 1fr; 
     align-items: center;
-    display: flex;
-    justify-content: center;
+    padding: 0 80px;
+    height: calc(100vh - 80px); /* Fill the rest of the viewport height */
+    overflow: hidden;
 }
