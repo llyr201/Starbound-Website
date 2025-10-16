@@ -131,6 +131,10 @@ img{
 
 .spacer-content{
     text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
 }
 .spacer{
      display: grid;
