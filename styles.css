@@ -146,5 +146,5 @@ img{
     display: flex;
     align-items: center;
     /* Hide the text logo in the header as it's meant to be in the main content */
-    opacity: 0; 
+    opacity: 100%; 
 }
