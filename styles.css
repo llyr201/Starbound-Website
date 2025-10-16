@@ -122,8 +122,12 @@ img{
 }
 
 .spacer-content{
+
+}
+.spacer{
     margin-left: 5px; 
     margin-top: 0; 
     align-items: center;
     display: flex;
+    justify-content: center;
 }
