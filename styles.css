@@ -36,31 +36,16 @@ body::before {
     opacity: 0.8;
 }
 
-h1{
+h1, h2 {
     font-family: 'arial', sans-serif;
     color: white;
     width: 100%;
-    text-align: center;
     margin-top: 20px;   
     display: flex;
     font-size: 30px;
     align-items: center;
-    text-align: left;
     justify-content: center;
-}
-
-h2{
-    font-family: 'arial', sans-serif;
-    color: white;
-    width: 100%;
-    text-align: center;
-    margin-top: 20px; 
-    font-size: 30px;
-    align-content: center; 
-    text-align: left;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    text-align: center; /* <-- This centers the text inside */
 }
 
 .container{
