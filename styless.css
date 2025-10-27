@@ -136,3 +136,97 @@ img{
     margin-bottom: 20px;
     text-align: center;
 }
+
+.games-section {
+  text-align: center;
+  padding: 80px 40px;
+  background: radial-gradient(circle at top, #0a1446, #030a23);
+}
+
+.games-section h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.games-section p {
+  font-size: 1.1rem;
+  color: #a0a8d0;
+  margin-bottom: 40px;
+}
+
+.games-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  justify-items: center;
+}
+
+.game-card {
+  position: relative;
+  background-color: #12163a;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+  max-width: 350px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.game-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 25px rgba(0,0,0,0.4);
+}
+
+.game-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 20px;
+  text-align: left;
+}
+
+.card-content h2 {
+  font-size: 1.4rem;
+  margin: 0 0 5px;
+}
+
+.genre {
+  color: #a077ff;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.card-content button {
+  background: linear-gradient(90deg, #7a3ffb, #5d00ff);
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.card-content button:hover {
+  opacity: 0.85;
+}
+
+/* Status tags (top-right badges) */
+.status-tag {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #7a3ffb;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.status-tag.available { background: #a02cff; }
+.status-tag.coming { background: #ff3ebf; }
+.status-tag.beta { background: #0099ff; }
+.status-tag.dev { background: #ffaa00; }
