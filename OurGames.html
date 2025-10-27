@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Games</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0b0f1a;
+      color: #ffffff;
+      margin: 0;
+      padding: 2rem;
+    }
+
+    h1, h2 {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    .games-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      padding: 2rem 0;
+    }
+
+    .game-card {
+      background-color: #1a2233;
+      border-radius: 10px;
+      padding: 1.5rem;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .game-title {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .game-genre {
+      font-style: italic;
+      color: #a0b0c0;
+      margin-bottom: 1rem;
+    }
+
+    .game-description {
+      flex-grow: 1;
+      margin-bottom: 1rem;
+    }
+
+    .status-label {
+      font-weight: bold;
+      padding: 0.3rem 0.6rem;
+      border-radius: 5px;
+      display: inline-block;
+      margin-bottom: 1rem;
+    }
+
+    .status-available { background-color: #28a745; }
+    .status-soon { background-color: #ffc107; }
+    .status-dev { background-color: #17a2b8; }
+    .status-beta { background-color: #6f42c1; }
+
+    .learn-more {
+      background-color: #ffffff;
+      color: #0b0f1a;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .learn-more:hover {
+      background-color: #ddd;
+    }
+  </style>
+</head>
+<body>
+  <h1>OUR GAMES</h1>
+  <h2>Explore our catalog of space-themed gaming experiences.</h2>
+
+  <div class="games-grid">
+    <div class="game-card">
+      <div class="game-title">Cosmic Raiders</div>
+      <div class="game-genre">Action RPG</div>
+      <div class="game-description">Join the crew and battle alien forces in this epic space adventure.</div>
+      <div class="status-label status-available">Available Now</div>
+      <button class="learn-more">Learn More</button>
+    </div>
+
+    <div class="game-card">
+      <div class="game-title">Nebula Nexus</div>
+      <div class="game-genre">Strategy</div>
+      <div class="game-description">Build and defend your space station against cosmic threats.</div>
+      <div class="status-label status-soon">Coming Soon</div>
+      <button class="learn-more">Learn More</button>
+    </div>
+
+    <div class="game-card">
+      <div class="game-title">Stellar Speedway</div>
+      <div class="game-genre">Racing</div>
+      <div class="game-description">Race through asteroid fields at breakneck speeds.</div>
+      <div class="status-label status-available">Available Now</div>
+      <button class="learn-more">Learn More</button>
+    </div>
+
+    <div class="game-card">
+      <div class="game-title">Galactic Architects</div>
+      <div class="game-genre">Simulation</div>
+      <div class="game-description">Design and manage your own interstellar civilization.</div>
+      <div class="status-label status-dev">In Development</div>
+      <button class="learn-more">Learn More</button>
+    </div>
+
+    <div class="game-card">
+      <div class="game-title">Void Vanguard</div>
+      <div class="game-genre">Shooter</div>
+      <div class="game-description">Take command of elite forces in deep space combat.</div>
+      <div class="status-label status-available">Available Now</div>
+      <button class="learn-more">Learn More</button>
+    </div>
+
+    <div class="game-card">
+      <div class="game-title">Quantum Quest</div>
+      <div class="game-genre">Puzzle</div>
+      <div class="game-description">Solve mind-bending challenges across the galaxy.</div>
+      <div class="status-label status-beta">Beta Access</div>
+      <button class="learn-more">Learn More</button>
+    </div>
+  </div>
+</body>
+</html>
