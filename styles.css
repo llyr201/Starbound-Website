@@ -1,154 +1,46 @@
-body{
-    background-color: #151b54;
-    height: 100vh;
+body {
+    background-color: #0A0A0B;
+    background-image:
+        linear-gradient(rgba(75, 75, 75, 0.18) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(75, 75, 75, 0.18) 1px, transparent 1px);
+    background-size: 50px 50px;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
-
-body::before {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    pointer-events: none;
-    z-index: 0;
-    /* Random white dots (stars) using radial gradients */
-    background-image:
-        radial-gradient(white 1px, transparent 1px),
-        radial-gradient(white 1.5px, transparent 1.5px),
-        radial-gradient(white 0.5px, transparent 0.5px),
-        radial-gradient(white 1px, transparent 1px),
-        radial-gradient(white 1.2px, transparent 1.2px);
-    background-size:
-        100px 100px,
-        150px 150px,
-        200px 200px,
-        250px 250px,
-        300px 300px;
-    background-position:
-        10px 20px,
-        80px 120px,
-        150px 60px,
-        200px 180px,
-        250px 90px;
-    opacity: 0.8;
-}
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 80px;
-    position: relative; /* To position the rocket/logo */
-    z-index: 10;
-}
-
-h1{
-    font-family: 'arial', sans-serif;
-    color: white;
-    width: 100%;
-    margin-top: 20px;   
-    display: flex;
-    font-size: 30px;
-}
-
-.container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-a{
-    text-decoration: none;
-    color: white;
-    font-family: 'arial', sans-serif;
-    font-size: 20px;
-    padding: 10px 20px;
-    border: 2px solid white;
-    border-radius: 5px;
-    transition: all 0.3s ease;
-    margin: 10px;
-    display: inline-block;
-}
-a:hover{
-    background-color: white;
-    color: black;
-    transform: scale(1.1);
-}
-
-p{
-    font-family: 'arial', sans-serif;
-    color: white;
-    width: 100%;
-    text-align: center;
-    margin-top: 30px;  
-    display: flex;
-    align-items: center;
-    font-size: 20px;
-    text-align: center;
-    justify-content: center;
-}
-img{
-    display: flex;
-    margin: 20px auto;
-    max-width: 500px;
-    height: auto;
-
-}
-
-.logo img{
-    height: 50px;
-    width: auto;
-}
-
-.news-content{
-    background-color: rgba(255, 255, 255, 0.1);
-    border: 1px solid white;
-    border-radius: 10px;
+.Login {
+    width: 300px;
+    margin: 100px auto;
     padding: 20px;
-    margin: 20px auto;
-    max-width: 800px;
+    background: rgba(255, 255, 255, 0.14);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 24px;
     color: white;
-    font-family: 'arial', sans-serif;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(10px);
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
-
-.news-date{
-    font-size: 14px;
-    color: #ccc;
-    margin-top: -10px;
+.Login h1 {
+    text-align: center;
     margin-bottom: 20px;
-    text-align: center;
-    justify-content: space-between;
-    gap: 1rem;
 }
-
-.spacer-content{
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
+.Login input[type="text"],
+.Login input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
 }
-.spacer{
-     display: grid;
-    /* This creates two main columns: one for text, one for the controller */
-    grid-template-columns: 1.5fr 1fr; 
-    align-items: center;
-    padding: 0 80px;
-    height: calc(100vh - 80px); /* Fill the rest of the viewport height */
-    overflow: hidden;
+.Login button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
 }
-
-.logo-container {
-    display: flex;
-    align-items: center;
-    /* Hide the text logo in the header as it's meant to be in the main content */
-    opacity: 100%; 
-}
+.Login button:hover {
+    background-color: #0056b3;
+} 
