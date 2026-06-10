@@ -1,5 +1,5 @@
-const ADMIN_EMAIL = 'admin@starboundgamelabs.com','llyrowen@starboundgamelabs.com';
-const ADMIN_PASSWORD = 'StarboundL1Y4!','LlyrOwen5597!';
+const ADMIN_EMAIL = 'admin@starboundgamelabs.com';
+const ADMIN_PASSWORD = 'StarboundL1Y4!';
 
 function loginAdmin(email, password) {
   if (email === ADMIN_EMAIL && password === ADMIN_PASSWORD) {
