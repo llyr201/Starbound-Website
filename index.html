@@ -1,21 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>starbound Game Labs</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="login.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign In | Starbound Game Labs</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="login.js" defer></script>
 </head>
-<body>
-  <div class="Login">
-    <h1>Starbound Game Labs</h1>
-    <h2>Login</h2>
-    <form id="loginForm">
-      <input type="text" name="username" placeholder="Username" required>
-      <input type="password" name="password" placeholder="Password" required>
-      <button type="submit">Log in</button>
-    </form>
-  </div>
+<body class="login-page">
+  <main class="auth-shell">
+    <section class="auth-panel">
+      <div class="brand">
+        <div class="brand-mark">★</div>
+        <div>
+          <h1>Starbound Game Labs</h1>
+          <p>Sign in to explore your studio dashboard and latest game builds.</p>
+        </div>
+      </div>
+      <form id="loginForm" autocomplete="on">
+        <label class="form-label">
+          Username
+          <input type="text" name="username" placeholder="Enter your username" autocomplete="username" maxlength="256" required>
+        </label>
+        <label class="form-label">
+          Password
+          <input type="password" name="password" placeholder="Enter your password" autocomplete="current-password" required>
+        </label>
+        <p id="loginMessage" class="auth-status" role="status" aria-live="polite"></p>
+        <button type="submit" class="primary-button">Sign in</button>
+      </form>
+      <p class="helper-text">
+        New to Starbound? <a href="signup.html">Create an account</a>
+      </p>
+      <p class="helper-text">
+        Want to preview the site first? <a href="home.html">Browse the lab</a>
+      </p>
+    </section>
+  </main>
 </body>
 </html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Account | Starbound Game Labs</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="login.js" defer></script>
+</head>
+<body class="login-page">
+  <main class="auth-shell">
+    <section class="auth-panel">
+      <div class="brand">
+        <div class="brand-mark">★</div>
+        <div>
+          <h1>Join Starbound Game Labs</h1>
+          <p>Create an account to explore the studio dashboard and latest game builds.</p>
+        </div>
+      </div>
+      <form id="signupForm" autocomplete="on">
+        <label class="form-label">
+          Username
+          <input type="text" name="username" placeholder="Choose a username" autocomplete="username" minlength="3" maxlength="256" required>
+        </label>
+        <label class="form-label">
+          Email
+          <input type="email" name="email" placeholder="you@example.com" autocomplete="email" maxlength="320" required>
+        </label>
+        <label class="form-label">
+          Password
+          <input type="password" name="password" placeholder="At least 12 characters" autocomplete="new-password" minlength="12" maxlength="1024" required>
+        </label>
+        <label class="form-label">
+          Confirm password
+          <input type="password" name="confirmPassword" placeholder="Enter your password again" autocomplete="new-password" minlength="12" maxlength="1024" required>
+        </label>
+        <p id="signupMessage" class="auth-status" role="status" aria-live="polite"></p>
+        <button type="submit" class="primary-button">Create account</button>
+      </form>
+      <p class="helper-text">
+        Already have an account? <a href="index.html">Sign in</a>
+      </p>
+    </section>
+  </main>
+</body>
+</html>
